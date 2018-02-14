@@ -5,6 +5,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
 - Mobile device collecting PM10, PM2.5 data and GPS coordinates
 - Publishing sensor data via MQTT
 - Storing sensor data as time series with GPS coordinates in [Elasticsearch](https://github.com/elastic/elasticsearch) or [Sematext Cloud](https://sematext.com/cloud)
+- Software with low memory and CPU footprint (<50 MB RAM, <2% CPU)
 - Visualization
 - Alerts
 
@@ -30,6 +31,8 @@ __under construction__
 ## In the Cloud 
 - MQTT Broker [mosquitto](http://mosquitto.org/)
 - [Elasticsearch](http://elastic.co) or Sematext Cloud [https://sematext.com/cloud]
+  Create in Sematext Cloud two logging apps. One for linux logs and one for sensor data.
+  If you like to monitor the Node.js and device performance create a Node.js monitorig app.  
 
 ## On your desktop 
 - [Node-Red](https://nodered.org/) or [Octoblu](https://octoblu.github.io/)
