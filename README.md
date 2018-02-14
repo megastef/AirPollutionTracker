@@ -1,6 +1,6 @@
 # AirPollutionTracker
 
-DIY IoT project for air-pollution measurement and real-time analysis. 
+DIY IoT project for mobile air-pollution measurements and real-time analysis. 
 
 - Mobile device collecting PM10, PM2.5 data and GPS coordinates
 - Publishing sensor data via MQTT
