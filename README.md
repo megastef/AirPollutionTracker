@@ -22,12 +22,19 @@ __under construction__
 
 # Software
 
+## On the device 
 - Debian Linux / [Bananian](https://www.bananian.org/download) or [Armbian](https://www.armbian.com/banana-pi/) or [ArchLinux](https://wiki.archlinux.org/index.php/Banana_Pi) 
 - [Node.js](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 - [Logagent](https://sematext.com/logagent/) with [plugins](https://sematext.com/docs/logagent/plugins/)
+
+## In the Cloud 
 - MQTT Broker [mosquitto](http://mosquitto.org/)
-- [Node-Red](https://nodered.org/) or [Octoblu](https://octoblu.github.io/)
 - [Elasticsearch](http://elastic.co) or Sematext Cloud [https://sematext.com/cloud]
+
+## On your desktop 
+- [Node-Red](https://nodered.org/) or [Octoblu](https://octoblu.github.io/)
+- Web browser
+- SSH terminal
 
 # Banana-Pi setup
 
