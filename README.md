@@ -89,7 +89,7 @@ ls -l /dev/tty* | grep 'dialout'
 # /dev/ttyUSB0
 ```
 
-Note the name for the `input.novaSDS011.comPort setting in Logagent configuration.  
+Note the name for the `input.novaSDS011.comPort setting in the [Logagent configuration file](https://github.com/megastef/AirPollutionTracker/blob/master/logagent-config.yml#L22).  
 
 ## GPS sensor setup 
 
@@ -101,7 +101,7 @@ ls -l /dev/tty* | grep 'dialout'
 # /dev/ttyACM0
 ```
 
-Note the name `input.gps.comPort` setting in Logagent configuration. 
+Note the name `input.gps.comPort` setting in the [Logagent configuration file](https://github.com/megastef/AirPollutionTracker/blob/master/logagent-config.yml#L22). 
 
 
 
