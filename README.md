@@ -7,7 +7,8 @@ DIY IoT project for air-pollution measurement and real-time analysis.
 - Storing sensor data as time series with GPS coordinates in Elasticsearch or Sematext Cloud
 - Visualization
 - Alerts
-- Public storage for 
+
+![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image10.png)
 
 # Status
 
