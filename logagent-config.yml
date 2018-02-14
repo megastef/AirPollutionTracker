@@ -1,3 +1,12 @@
+# Example for Logagent configuration
+# Plase adjust following settings: 
+#   input.novaSDS011.comPort
+#   input.gps.comPort
+#   input.nodejsMonitor.SPM_TOKEN
+#   output.mqtt.url
+#   output.elasticsearch.url
+#   output.elasticsearch.indices
+
 options: 
   # suppress log event output to console
   suppress: true
@@ -64,7 +73,7 @@ output:
   
   # Store log events & sensor data in Sematext Cloud or Elasticsearch
   # Create a log application in Sematext Cloud to obtain a token
-  sematext-cloud:
+  elasticsearch:
     module: elasticsearch
     url: https://logsene-receiver.sematext.com
     # url: https://logsene-receiver.eu.sematext.com
