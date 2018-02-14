@@ -18,8 +18,7 @@ __under construction__
 - Banana-Pi (or Raspberry-Pi) ![](https://images-na.ssl-images-amazon.com/images/I/71Y8shG5r-L._AC_UL160_SR160,160_.jpg)
 - PM sensor: Nova SDS011 PM Sensor with serial to USB interface ![](https://images-na.ssl-images-amazon.com/images/I/51XbIvd3RIL.jpg)
 - GPS sensor: [Ublox-7, Diymall Vk-172 vk 172 Gmouse G-Maus Usb Gps Dongle Glonass](https://www.amazon.de/dp/B015E2XSSO/ref=cm_sw_r_tw_dp_U_x_zBbHAbB7WPA2K) 
-
-![](https://images-na.ssl-images-amazon.com/images/I/51Vqkrr5SeL.jpg
+![](https://images-na.ssl-images-amazon.com/images/I/51Vqkrr5SeL.jpg)
 
 # Software
 
