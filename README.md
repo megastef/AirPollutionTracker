@@ -10,6 +10,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
 - Alerts
 
 ![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image10.png)
+![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image13.png)
 
 # Status
 
