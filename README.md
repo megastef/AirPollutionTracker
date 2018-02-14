@@ -30,7 +30,7 @@ __under construction__
 
 ## In the Cloud 
 - MQTT Broker [mosquitto](http://mosquitto.org/)
-- [Elasticsearch](http://elastic.co) or Sematext Cloud [https://sematext.com/cloud]
+- [Elasticsearch](http://elastic.co) or [Sematext Cloud](https://sematext.com/cloud)
   Create in Sematext Cloud two logging apps. One for linux logs and one for sensor data.
   If you like to monitor the Node.js and device performance create a Node.js monitorig app.  
 
