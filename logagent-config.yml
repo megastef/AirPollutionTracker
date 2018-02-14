@@ -1,0 +1,81 @@
+options: 
+  # suppress log event output to console
+  suppress: true
+  # Write Logagent stats in the Logagent log file /var/log/logagent.log
+  # The stats show how many events have been processed and shipped
+  # Log interval in seconds
+  printStats: 60
+
+input:
+  novaSDS011:
+    module: input-nova-sda011
+    # Find TTY name: ls -l /dev/tty* | grep 'dialout'
+    comPort: /dev/ttyUSB0
+    # Working period in minutes. The setting is persistent 
+    # for the connected Nova SDS011 sensor
+    # 1 minute measurement interval
+    workingPeriod: 1
+
+  gps: 
+    module: logagent-gps
+    # Find TTY name: ls -l /dev/tty* | grep 'dialout'
+    comPort: /dev/ttyACM0
+    # Emit only location event, to share the location with nova sensor
+    emitOnlyLocationEvent: true
+    # disable debug output
+    debug: false
+  
+  # Optional, monitor logagent and device performance
+  # Create in Sematext Cloud a Node.js monitoring app
+  # to obtain the SPM_TOKEN
+  nodejsMonitor: 
+    module: @sematext/logagent-nodejs-monitor
+    SPM_TOKEN: YOUR_SEMATEXT_NODEJS_MONITORING_TOKEN
+  
+  # collect all system logs for troubleshooting
+  files: 
+    - /var/log/**/*.log
+  
+# calculate PM2.5/PM10 ratio in percent 
+outputFilter:
+  - module: !!js/function >
+      function (context, config, eventEmitter, data, callback)  {
+        if (data.PM10 && data.PM10 > 0) {
+            data.PM25ratio = (data['PM2.5']/data.PM10) * 100
+        }
+        callback(null, data)
+      }
+
+output: 
+  # print log events in yaml format
+  # when options.suppress=false
+  stdout: yaml
+  # Forward sensor logs to MQTT broker
+  mqtt:
+    module: output-mqtt
+    url: mqtt://test.mosquitto.org
+    topic: sensor-data
+    debug: false
+    # optional filter settings matching data field with regular expressions
+    # we use the filter to exclude the system log files
+    filter: 
+      field: logSource
+      match: Nova
+  
+  # Store log events & sensor data in Sematext Cloud or Elasticsearch
+  # Create a log application in Sematext Cloud to obtain a token
+  sematext-cloud:
+    module: elasticsearch
+    url: https://logsene-receiver.sematext.com
+    # url: https://logsene-receiver.eu.sematext.com
+    # url: http://127.0.0.1:9200 
+    # We route system logs and sensor data to different indices
+    # each index has a list of regular expressions matching the logSource field
+    indices:
+      # sensor data index
+      YOUR_SEMATEXT_LOGS_TOKEN: 
+        - Nova
+      # system logs index
+      ANOTHER__SEMATEXT_LOGS_TOKEN:
+        - var.log.*
+
