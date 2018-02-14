@@ -129,7 +129,7 @@ logagent-setup -t indexName -e http://localhost:9200
 service logagent stop
 ```
 
-Adjust the Logagent configuration and check following settings: 
+Adjust the [Logagent configuration](https://github.com/megastef/AirPollutionTracker/blob/master/logagent-config.yml) and check following settings: 
  - input.novaSDS011.comPort
  - input.gps.comPort
  - input.nodejsMonitor.SPM_TOKEN
@@ -140,10 +140,10 @@ Adjust the Logagent configuration and check following settings:
 Test the configuration with 
 
 ```
-logagent --config logagent.conf 
+logagent --config logagent.yml 
 ```
 
-Copy the working configuration to /etc/sematext/logagent.conf and start the service with 
+Copy the working configuration file logagent-config.yml to /etc/sematext/logagent.conf and start the service with 
 
 ```
 service logagent start 
