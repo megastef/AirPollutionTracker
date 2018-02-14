@@ -30,42 +30,6 @@ __under construction__
 
 # Banana-Pi setup
 
-## Install Node.js
-
-```
-apt-get install build-essential
-curl -sL https://deb.nodesource.com/setup_8.x | bash - 
-apt-get install -y nodejs
-```
-
-## Install Logagent
-
-Install @sematext/logagent and relevant plugins
-```
-npm i -g --unsafe-perm @sematext/logagent 
-npm i -g --unsafe-perm logagent-gps logagent-novasds
-npm i -g --unsafe-perm @sematext/logagent-nodejs-monitor 
-```
-
-Create a system service and default configuration file '/etc/sematext/logagent.conf': 
-
-```
-logagent-setup -t indexName -e http://localhost:9200  
-service logagent stop
-```
-
-Adjust the Logagent configuration. Test the configuration with 
-
-```
-logagent --config logagent.conf 
-```
-
-Copy the working configuration to /etc/sematext/logagent.conf and start the service with 
-
-```
-service logagent start 
-```
-
 # Wi-Fi setup 
 
 A smart phone will serve as mobile Wi-Fi hotspot.  
@@ -105,7 +69,9 @@ Restart the wlan0 interface:
 ifdown wlan0 && ifup wlan0
 ```
 
-# Nova SDS011 setup 
+
+
+## Nova SDS011 setup 
 
 Insert the Nova-SDS011 USB connector. 
 Then search for new Ttty devices. 
@@ -115,9 +81,9 @@ ls -l /dev/tty* | grep 'dialout'
 # /dev/ttyUSB0
 ```
 
-Set the right name for the COM port in Logagent configuration:  
+Note the name for the `input.novaSDS011.comPort setting in Logagent configuration.  
 
-# GPS sensor setup 
+## GPS sensor setup 
 
 Insert the USB GPS dongle. 
 Then search for new Ttty devices. 
@@ -127,4 +93,51 @@ ls -l /dev/tty* | grep 'dialout'
 # /dev/ttyACM0
 ```
 
-Set the right name for the COM port in Logagent configuration.  
+Note the name `input.gps.comPort` setting in Logagent configuration. 
+
+
+
+## Install Node.js
+
+```
+apt-get install build-essential
+curl -sL https://deb.nodesource.com/setup_8.x | bash - 
+apt-get install -y nodejs
+```
+
+## Install Logagent
+
+Install @sematext/logagent and relevant plugins
+```
+npm i -g --unsafe-perm @sematext/logagent 
+npm i -g --unsafe-perm logagent-gps logagent-novasds
+npm i -g --unsafe-perm @sematext/logagent-nodejs-monitor 
+```
+
+Create a system service and default configuration file '/etc/sematext/logagent.conf': 
+
+```
+logagent-setup -t indexName -e http://localhost:9200  
+service logagent stop
+```
+
+Adjust the Logagent configuration and check following settings: 
+ - input.novaSDS011.comPort
+ - input.gps.comPort
+ - input.nodejsMonitor.SPM_TOKEN
+ - output.mqtt.url
+ - output.elasticsearch.url
+ - output.elasticsearch.indices
+
+Test the configuration with 
+
+```
+logagent --config logagent.conf 
+```
+
+Copy the working configuration to /etc/sematext/logagent.conf and start the service with 
+
+```
+service logagent start 
+```
+
