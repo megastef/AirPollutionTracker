@@ -32,7 +32,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
 
 # Hardware
 
-- Banana-Pi M2
+- Banana-Pi M2 (or Raspberry-Pi)
 - PM sensor: Nova SDS011 PM Sensor with serial to USB interface 
 - GPS sensor: [Ublox-7, Diymall Vk-172 vk 172 Gmouse G-Maus Usb Gps Dongle Glonass](https://www.amazon.de/dp/B015E2XSSO/ref=cm_sw_r_tw_dp_U_x_zBbHAbB7WPA2K) 
 
