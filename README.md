@@ -2,10 +2,11 @@
 
 DIY IoT project for mobile air-pollution measurements and real-time analysis. 
 
-- Mobile device collecting PM10, PM2.5 data and GPS coordinates
-- Publishing air pollution sensor data via MQTT
+- Mobile device collecting PM10, PM2.5 sensor data with GPS coordinates
+- Publishing air pollution data via MQTT
 - Storing sensor data as time series with GPS coordinates in [Elasticsearch](https://github.com/elastic/elasticsearch) or [Sematext Cloud](https://sematext.com/cloud)
 - Node.js software for data collection with low memory and CPU footprint (<50 MB RAM, <2% CPU)
+- Device monitoring and log file collection for troubleshooting
 - Visualization
 - Alerts
 
