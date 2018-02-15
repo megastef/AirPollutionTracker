@@ -60,7 +60,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
 ![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image13.png)
 
 ## On your desktop 
-- [Node-Red](https://nodered.org/) or [Octoblu](https://octoblu.github.io/)
+- IoT platforms with MQTT support: [Node-Red](https://nodered.org/) or [Octoblu](https://octoblu.github.io/)
 - Web browser
 - SSH terminal
 
