@@ -20,7 +20,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
   - [In the Cloud](#in-the-cloud)
   - [On your desktop](#on-your-desktop)
 - [Banana-Pi setup](#banana-pi-setup)
-- [Wi-Fi setup](#wi-fi-setup)
+  - [Wi-Fi setup](#wi-fi-setup)
   - [Nova SDS011 setup](#nova-sds011-setup)
   - [GPS sensor setup](#gps-sensor-setup)
   - [Install Node.js](#install-nodejs)
