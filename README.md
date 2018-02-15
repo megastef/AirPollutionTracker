@@ -1,4 +1,4 @@
-# AirPollutionTracker
+# Air pollution tracker
 
 DIY IoT project for mobile air-pollution measurements and real-time analysis. 
 
