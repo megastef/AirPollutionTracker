@@ -28,10 +28,13 @@ __under construction__
 - Debian Linux / [Bananian](https://www.bananian.org/download) or [Armbian](https://www.armbian.com/banana-pi/) or [ArchLinux](https://wiki.archlinux.org/index.php/Banana_Pi) 
 - [Node.js](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 - [Logagent](https://sematext.com/logagent/) with [plugins](https://sematext.com/docs/logagent/plugins/)
-  - [logagent-gps](https://www.npmjs.com/package/logagent-gps)
-  - [logagent-novasds](https://www.npmjs.com/package/logagent-novasds)
-  - [@sematext/logagent-nodejs-monitor](https://www.npmjs.com/package/@sematext/logagent-nodejs-monitor)
-
+  - GPS tracking: [logagent-gps](https://www.npmjs.com/package/logagent-gps)  
+  - PM measurement: [logagent-novasds](https://www.npmjs.com/package/logagent-novasds)
+  - Collect system log files: [file input](https://sematext.com/docs/logagent/input-plugin-files/) for log file collection 
+  - Share sensor data via MQTT topic: [output-mqtt](https://sematext.com/docs/logagent/output-plugin-mqtt/) 
+  - Store sensor-data and device logs in Elasticsearch: [elasticsearch](https://sematext.com/docs/logagent/output-elasticsearch/) 
+  - Monitor Logagent/Node.js performance and device metrics: [@sematext/logagent-nodejs-monitor](https://www.npmjs.com/package/@sematext/logagent-nodejs-monitor) 
+  
 ## In the Cloud 
 - MQTT Broker [mosquitto](http://mosquitto.org/)
 - [Elasticsearch](http://elastic.co) or [Sematext Cloud](https://sematext.com/cloud)
