@@ -55,9 +55,16 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
 - MQTT Broker [mosquitto](http://mosquitto.org/)
 - [Elasticsearch](http://elastic.co) or [Sematext Cloud](https://sematext.com/cloud)
   Create in Sematext Cloud two logging apps. One for linux logs and one for sensor data.
-  If you like to monitor the Node.js and device performance create a Node.js monitoring app.  
+  If you like to monitor the Node.js and device performance create a Node.js monitoring app. 
+  Dashboards and alerts can be managed in Sematext Cloud. Kibana is integrated. 
+  Alternative dashboard tools like Grafana could be used with the Elasticsearch data source for Sematext Cloud. 
+  
 
 ![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image13.png)
+Kibana dashboard (integrated in Sematext Cloud UI)
+
+![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/Bildschirmfoto%202018-02-16%20um%2015.04.24.png)
+Grafana Dashboard using data from Sematext Cloud / Elasticsearch API 
 
 ## On your desktop 
 - IoT platforms with MQTT support: [Node-Red](https://nodered.org/) or [Octoblu](https://octoblu.github.io/)
