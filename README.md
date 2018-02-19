@@ -36,7 +36,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
 - PM sensor: Nova SDS011 PM Sensor with serial to USB interface 
 - GPS sensor: [Ublox-7, Diymall Vk-172 vk 172 Gmouse G-Maus Usb Gps Dongle Glonass](https://www.amazon.de/dp/B015E2XSSO/ref=cm_sw_r_tw_dp_U_x_zBbHAbB7WPA2K) 
 
-![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image10.png)
+![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/hardware.png)
 
 # Software
 
@@ -60,7 +60,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
   Alternative dashboard tools like Grafana could be used with the Elasticsearch data source for Sematext Cloud. 
   
 
-![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image13.png)
+![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/kibana-dashboard.png)
 Kibana dashboard (integrated in Sematext Cloud UI)
 
 ![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/grafana-dashboard.png)
