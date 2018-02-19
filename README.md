@@ -63,7 +63,7 @@ DIY IoT project for mobile air-pollution measurements and real-time analysis.
 ![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/image13.png)
 Kibana dashboard (integrated in Sematext Cloud UI)
 
-![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/Bildschirmfoto%202018-02-16%20um%2015.04.24.png)
+![](https://raw.githubusercontent.com/megastef/AirPollutionTracker/master/grafana-dashboard.png)
 Grafana Dashboard using data from Sematext Cloud / Elasticsearch API 
 
 ## On your desktop 
