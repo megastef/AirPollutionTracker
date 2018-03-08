@@ -1,6 +1,6 @@
 # Air pollution tracker
 
-DIY IoT project for mobile air-pollution measurements and real-time analysis. 
+DIY IoT project for mobile air-pollution measurements and real-time analysis. Read my [blog post](https://sematext.com/blog/iot-air-pollution-tracking-with-node-js-elastic-stack-and-mqtt/) for more details. 
 
 - Mobile device collecting PM10, PM2.5 sensor data with GPS coordinates
 - Publishing air pollution data via MQTT
